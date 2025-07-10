@@ -21,24 +21,58 @@
 .text-center {
     text-align: center;
 }
-
+body{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.2),
+                rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.2),
+                rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.2),
+                rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.2),
+                rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.2),
+                rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.2),
+                rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.2),
+                rgba(255, 0, 0, 0));
+}
 header,
 main {
     margin: 140px;
     margin-top: 50px;
+    max-width: 1320px;
 }
-
+/* button style */
+.btn-primary {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+}
+/* new year bg-img style */
 .hero-header {
     background-image: linear-gradient(rgba(7, 2, 17, 1), rgba(7, 2, 17, 0)), url('../images/Banner\ Image.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
 }
-
+/* welcome bg-img style */
+.welcome-section{
+    background-image:linear-gradient(rgba(7, 2, 17, 1), rgba(7, 2, 17, 0)), url('../images/Vectorrr.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* hero section style */
 .hero-text-content {
     color: white;
 
@@ -54,7 +88,10 @@ main {
     font-size: 70px;
     line-height: 95px;
 }
-
+/* offer section style */
+.offer-section{
+    margin-bottom: 120px;
+}
 .offer-percentage {
     padding-bottom: 40px;
     color: #FF0000;
@@ -74,4 +111,89 @@ main {
     color: #070211;
     font-size: 48px;
     font-weight: bold;
+}
+/* welcome midparty section style */
+.welcome-content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.midparty-content{
+    margin: 120px 120px 148px;
+}
+.welcome-content h2{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 88px;
+    letter-spacing: 11%;
+    margin-bottom: 24px;
+}
+.welcome-content p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 45px;
+}
+.welcome-section img{
+    margin: 65px 130px 65px 0;
+}
+/* event section style */
+.event-section{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.3),
+        rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.3),
+            rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.3),
+                rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.3),
+                    rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.3),
+                        rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.3),
+                            rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.3),
+                                rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.3),
+                                    rgba(255, 0, 0, 0));
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+    border-radius: 16px;
+}
+.event-content{
+    margin: 110px 380px;
+    margin-bottom: 80px;
+}
+.event-description p{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+}
+.event-description span{
+    color: #FF0000;
+}
+.event-content .btn-primary{
+    background-color: #FF0000;
+    border-radius: 8px;
+    margin-top: 48px;
+    margin-bottom: 100px;
+    padding: 16px 32px;
+}
+/* new offer section style */
+.new-offer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-offer-content{
+    margin: 104px 70px 104px;
+}
+.new-offer-content h4{
+    color: #FF0000;
+    font-size: 24px;
+    font-weight: 500;
+}
+.new-offer-content h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+.new-offer-content p{
+    color: rgba(7, 2, 17, 0.6);
+    font-size: 20px;
+    line-height: 32px;
 }

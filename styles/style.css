@@ -52,7 +52,11 @@
 
 /* welcome bg-img style */
 .welcome-section {
-  background-image: linear-gradient(90.00deg, rgb(7, 2, 17),rgba(7, 2, 17, 0) 100%),
+  background-image: linear-gradient(
+      90deg,
+      rgb(7, 2, 17),
+      rgba(7, 2, 17, 0) 100%
+    ),
     url("../images/Vectorrr.png");
   background-size: cover;
   background-position: center;
@@ -273,18 +277,30 @@
   margin-bottom: 30px;
 }
 
-.holiday-offer {
-  background-image: url("../images/Rectangle\ 2.png");
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  height: 150vh;
-}
 /* images design */
+.images {
+  position: relative;
+}
 .discount-img {
-  float: right;
+  right: 10%;
+  top: 250px;
+  position: absolute;
+}
+.rectangle {
+  position: relative;
+  width: 100%;
+}
+.rectangle-img {
+  position: absolute;
+  width: 1320px;
+  height: 229px;
+  /* left: 10px; */
+  /* right: -140px; */
+  top: 700px;
 }
 .images .gift-img {
-  padding-top: 200px;
-  margin-right: 500px;
+  position: absolute;
+  left: 30px;
+  top: 270px;
+  opacity: 90%;
 }
